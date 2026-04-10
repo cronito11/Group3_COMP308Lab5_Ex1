@@ -17,7 +17,7 @@ app.use(express.json());
 
 // AI Model Configuration
 const model = new ChatGoogleGenerativeAI({
-  model: "gemini-2.0-flash",
+  model: "gemini-2.5-flash-lite",
   maxOutputTokens: 2048,
   maxRetries: 0,
   safetySettings: [
