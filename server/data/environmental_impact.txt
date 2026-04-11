@@ -1,10 +1,42 @@
-AI model training and inference can consume significant electricity, especially in large data centers.
-Proof-of-work blockchain networks can increase carbon emissions when powered by fossil-fuel-heavy grids.
-Edge computing can reduce data transfer energy by processing information closer to users.
-5G network infrastructure may increase energy demand if deployment does not include efficiency controls.
-Internet of Things devices can create e-waste pressure due to short hardware lifecycles.
-Cloud providers can reduce environmental impact by shifting workloads to renewable-energy regions.
-Improved chip design can lower power consumption per AI inference task.
-Unoptimized software increases compute time and energy use, while efficient algorithms reduce both.
-Water usage for data center cooling can stress local ecosystems in drought-prone regions.
-Lifecycle assessment is essential to compare the true environmental cost of emerging technologies.
+Emerging technologies, particularly Artificial Intelligence (AI) and advanced satellite data, have a profound and dual impact on the environment. While they demand significant energy and physical resources to operate, they also serve as powerful catalysts for reducing global emissions, advancing clean energy, and building climate resilience
+.
+Here is a comprehensive breakdown of how emerging technologies are impacting the environment based on the sources:
+1. The Environmental Cost: Increased Energy and Resource Demands The physical infrastructure required to support emerging technologies poses immediate environmental challenges:
+Rising Energy Consumption: The rapid expansion of digital services and AI requires massive computational power, which in turn demands significant electricity
+. To support this growth, Google's total data center electricity consumption grew by 27% in 2024
+. While global data centers accounted for 1.5% of global electricity consumption in 2024, this is projected to grow to about 3% by 2030
+.
+Hardware Manufacturing Emissions: The supply chain behind emerging technologies is highly carbon-intensive. Manufacturing advanced hardware, like semiconductors and specialized AI chips, requires substantial energy and the use of potent greenhouse gases
+. This increased infrastructure demand contributed to a 22% increase in Google's supply chain (Scope 3) emissions in 2024
+.
+Water Consumption: Data centers frequently rely on water cooling systems to operate efficiently
+. As AI infrastructure grows, so does the demand for fresh water; Google's global operations consumed 8.1 billion gallons of water in 2024, representing a 28% increase from the previous year
+.
+2. The Net-Positive Potential: AI as a Catalyst for Climate Solutions Despite the increased energy demands, the International Energy Agency (IEA) estimates that by 2035, the widespread adoption of existing AI applications could lead to emissions reductions nearly three to five times greater than projected data center emissions
+. Emerging technologies are driving environmental benefits across several critical areas:
+Optimizing Transportation and Aviation: AI is highly effective at managing complex variables to reduce fuel consumption
+. Features like Google Maps' fuel-efficient routing enabled over 2.7 million metric tons of greenhouse gas (GHG) reductions in 2024 by suggesting paths that optimize engine efficiency
+. AI tools like Green Light optimize city traffic light timings, showing the potential to reduce intersection stops by up to 30% and lower emissions by an average of over 10%
+. Furthermore, AI models are now predicting atmospheric conditions to help airplanes avoid creating contrails, which currently account for about 35% of aviation's global warming impact
+. In recent trials, pilots using AI predictions reduced contrail formation by 54%
+.
+Accelerating Clean Energy Deployment: AI, combined with high-resolution satellite imagery, is democratizing renewable energy. Tools like the Solar API have mapped the solar potential of nearly 540 million buildings globally
+. In 2024, AI was used to map 125 million previously unmapped buildings in the Global South, helping individuals and city planners easily assess rooftop solar viability
+.
+Transforming Disaster Response and Climate Resilience: As climate change intensifies extreme weather, AI is reshaping forecasting and early warnings to protect communities
+.
+Weather Forecasting: Deep-learning AI models like WeatherNext generate precise 10- to 15-day forecasts faster than traditional physics-based models, aiding in disaster response and grid reliability
+.
+Wildfire Detection: Partner-driven satellite constellations, such as FireSat, leverage high-resolution imagery and AI to detect wildfires as small as a garage (5x5 meters) within 20 minutes, allowing for rapid firefighting responses before fires escalate
+. Additionally, AI prediction engines like Bellwether can forecast the future probability of wildfires before they even ignite
+.
+Flood Prediction: AI-driven global hydrological models power systems like Flood Hub, which can predict riverine floods up to seven days in advance, providing crucial lead time for over 700 million people across 100 countries
+.
+Protecting Ecosystems and Biodiversity: AI and planetary-scale platforms are making it easier to track and respond to environmental degradation. Platforms like Google Earth Engine map deforestation drivers in near real-time down to a one-kilometer scale
+. Other AI applications are being used to monitor changes in global freshwater reservoirs
+ and track over a million marine vessels to prevent illegal fishing
+. AI acoustic tools are even being deployed to track whale migrations and monitor the health of coral reefs
+.
+In summary, while the infrastructure supporting emerging technologies requires intense resources, the analytical and predictive capabilities of AI offer scalable, cost-effective solutions to decarbonize industries, enhance global disaster resilience, and protect the natural environment
+
+Impact of Emerging Technologies to the Environment: Microsoft & Google 2025 ReportsI. Microsoft: 2025 Environmental Sustainability Report1. Environmental Challenges of Emerging TechnologiesInfrastructure & Energy Surge: Growing demand for AI and cloud services is driving the rapid expansion of datacenters and campuses, significantly increasing electricity needs.Carbon Footprint Risks: While often unused, backup diesel generators required for grid stability maintain a carbon footprint that Microsoft is actively working to eliminate.Embodied Carbon: Building materials and hardware manufacturing contribute "embodied carbon," which refers to emissions generated during the production and disposal of physical assets.Complex Hardware Waste: Hard-to-recycle materials like expanded polyethylene (EPE) foam in cloud hardware packaging present waste management challenges.2. Sustainable Solutions and AI InnovationAI-Driven Sustainability Tools:Research Acceleration: Using AI to discover new materials for batteries and carbon capture.Resource Management: Deploying AI-powered systems like AquaGen to monitor real-time water usage in hospitals, aiming to cut consumption by 50%.Planetary Computer: A platform aggregating global environmental data to help organizations monitor biodiversity and carbon budgets at scale.Efficiency Optimization:Makersite AI: Automating Life Cycle Assessments (LCAs), reducing modeling time for devices like Surface and Xbox by more than 80%.Next-Gen Hardware: Designing hardware optimized for specific AI inference phases (prefill and decode) to deliver 2.35 times more throughput under the same power budget.Circular Economy:Circular Centers: Global facilities dedicated to harvesting and repurposing decommissioned datacenter hardware.Green Software: Embedding energy-efficiency principles directly into software engineering and co-founding the Green Software Foundation.Energy Transition:Nuclear PPA: Restarting a nuclear facility to provide carbon-free electricity to critical datacenter regions.Renewable Diesel: Transitioning road freight and backup generators to renewable fuels to cut emissions.II. Google: 2025 Environmental Report1. Environmental Challenges of Emerging TechnologiesDigital Service Growth: The expansion of AI and digital services necessitates scaling infrastructure, which in turn increases total energy demand for operations and water for cooling.Supply Chain Complexity: Semiconductor manufacturing is energy-intensive and often located in regions with local grids heavily reliant on fossil fuels.Resource Demands: Total water consumption reached 8.1 billion gallons in 2024 to support datacenter and office cooling.2. Sustainable Solutions and AI InnovationAI for Global Impact:Fuel-Efficient Routing: Google Maps features enabled an estimated 2.7 million metric tons of GHG emissions reductions in 2024.Green Light: An AI tool that optimizes traffic light timing to reduce city congestion and emissions.Solar API: Assisting partners in installing solar panels that enabled 0.6 million metric tons of GHG reductions in the U.S..Infrastructure Efficiency:Ironwood TPU: The 7th-generation TPU is nearly 30 times more power-efficient than the first Cloud TPU from 2018.Datacenter Decarbonization: Google successfully reduced datacenter energy emissions by 12% in 2024 through new clean energy procurement.Resilience and Disaster Response:FireSat: A constellation of satellites using AI to detect and track wildfires as small as 5x5 meters.Flood Forecasting: AI provides flood alerts for over 80 countries, covering areas where 700 million people live.Circular Economy & Resources:Plastic-Free Packaging: 100% plastic-free packaging for new hardware products launched in 2024.Reverse Supply Chain: Diversion of 84% of operational waste from landfills by reclaiming components from decommissioned hardware.Water Replenishment: Replenished 64% of freshwater consumption through stewardship projects.
