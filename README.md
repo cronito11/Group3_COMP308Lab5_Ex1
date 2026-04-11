@@ -71,28 +71,7 @@ Process flow:
 - UI displays generated response in a read-only text area.
 - Query history (last 10 prompts) is stored in component state for quick reuse.
 
-## 3. Article Selection Process Documentation
-
-To keep findings current and relevant, the selection process used:
-
-1. Authority filter
-   - Prioritize official corporate sustainability pages (Microsoft and Google).
-
-2. Recency filter
-   - Focus on 2025 report-era information and latest published initiative updates.
-
-3. Relevance filter
-   - Keep content directly tied to software/AI sustainability topics:
-     - datacenter energy and water use
-     - AI efficiency
-     - decarbonization programs
-     - circular economy practices
-     - resilience tools (flood/wildfire systems)
-
-4. Evidence filter
-   - Keep measurable outcomes (for example emissions reduction, energy efficiency, water replenishment).
-
-## 4. How to Run the Summarizer Code and UI
+## 3. How to Run the Summarizer Code and UI
 
 ## Prerequisites
 
@@ -100,7 +79,7 @@ To keep findings current and relevant, the selection process used:
 - npm
 - A valid Google API key for Gemini
 
-## 4.1 Install Dependencies
+## 3.1 Install Dependencies
 
 From project root:
 
@@ -112,7 +91,7 @@ cd ../client
 npm install
 ```
 
-## 4.2 Configure Environment Variables
+## 3.2 Configure Environment Variables
 
 Create or update `server/.env` with:
 
@@ -120,7 +99,7 @@ Create or update `server/.env` with:
 GOOGLE_API_KEY=your_google_api_key_here
 ```
 
-## 4.3 Run Backend and Frontend
+## 3.3 Run Backend and Frontend
 
 Option A (Windows one-click):
 
@@ -144,12 +123,12 @@ cd client
 npm run dev
 ```
 
-## 4.4 Access the Application
+## 3.4 Access the Application
 
 - API base URL: `http://localhost:3000`
 - UI URL (Vite default): `http://localhost:5173`
 
-## 5. Suggested Demo Questions
+## 4. Suggested Demo Questions
 
 Use these prompts to demonstrate summarizer behavior:
 
@@ -159,7 +138,7 @@ Use these prompts to demonstrate summarizer behavior:
 1. "How does AI help with wildfire and flood resilience?"
 1. "What are the environmental costs of scaling AI infrastructure?"
 
-## 6. Project Structure
+## 5. Project Structure
 
 ```text
 Group3_COMP308Lab5_Ex1/
@@ -174,6 +153,5 @@ Group3_COMP308Lab5_Ex1/
    ├─ package.json
    └─ data/
       ├─ environmental_impact.txt
-      ├─ sustainable_solutions.txt
-      └─ info.txt
+      └─ sustainable_solutions.txt
 ```
