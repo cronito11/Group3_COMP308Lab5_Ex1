@@ -29,12 +29,33 @@ const model = new ChatGoogleGenerativeAI({
 });
 
 const tokenizer = new natural.WordTokenizer();
+const TYPE_TO_DOCUMENT = {
+  environmental_impact: "./data/environmental_impact.txt",
+  sustainable_solutions: "./data/sustainable_solutions.txt",
+};
+
+function resolveType(type) {
+  return type || "environmental_impact";
+}
+
+function isValidType(type) {
+  return Object.prototype.hasOwnProperty.call(TYPE_TO_DOCUMENT, type);
+}
 
 // Step 1: Load documents
-async function loadDocuments() {
-  const loader = new TextLoader("./data/info.txt");
-  const docs = await loader.load();
-  return docs;
+async function loadDocuments(type) {
+  const resolvedType = resolveType(type);
+  const filePath = TYPE_TO_DOCUMENT[resolvedType];
+
+  try {
+    const loader = new TextLoader(filePath);
+    const docs = await loader.load();
+    return docs;
+  } catch (error) {
+    throw new Error(
+      `Failed to load document for type '${resolvedType}' from ${filePath}: ${error.message}`,
+    );
+  }
 }
 
 // Step 2: Retrieve data
@@ -51,7 +72,7 @@ async function retrieveData(query, documents) {
     sentences.forEach((sentence) => {
       let sentenceTokens = tokenizer.tokenize(sentence.toLowerCase());
       let intersection = sentenceTokens.filter((token) =>
-        queryTokens.includes(token)
+        queryTokens.includes(token),
       );
       let score = intersection.length;
 
@@ -68,15 +89,24 @@ async function retrieveData(query, documents) {
 
 // Step 3: Handle user queries
 app.post("/api/query", async (req, res) => {
-  const { query } = req.body;
-  console.log("Received query:", query);
+  const { query, type } = req.body;
+  const resolvedType = resolveType(type);
+  console.log("Received query:", query, "Type:", resolvedType);
+
   if (!query) {
     return res.status(400).json({ error: "Query is required" });
   }
 
+  if (!isValidType(resolvedType)) {
+    return res.status(400).json({
+      error:
+        "Invalid type. Allowed values are: environmental_impact, sustainable_solutions",
+    });
+  }
+
   try {
     // Load documents
-    const documents = await loadDocuments();
+    const documents = await loadDocuments(resolvedType);
 
     // Retrieve the most relevant data
     const retrievedData = await retrieveData(query, documents);
@@ -95,7 +125,9 @@ app.post("/api/query", async (req, res) => {
     res.json({ response: response?.content || "No response generated." });
   } catch (error) {
     console.error("Error generating response:", error);
-    res.status(500).json({ error: "An error occurred while processing the request." });
+    res
+      .status(500)
+      .json({ error: "An error occurred while processing the request." });
   }
 });
 

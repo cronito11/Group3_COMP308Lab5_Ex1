@@ -1,0 +1,10 @@
+Microsoft improves sustainability by publishing carbon accounting tools and expanding renewable-energy procurement.
+Google designs data centers with advanced cooling and AI-based optimization to reduce energy waste.
+Amazon Web Services offers carbon footprint reporting features to help customers measure cloud emissions.
+Apple invests in recycled materials and supplier clean-energy programs across its hardware supply chain.
+Salesforce provides sustainability cloud platforms that support emissions tracking and ESG reporting.
+SAP enables enterprise sustainability analytics for resource planning and compliance workflows.
+IBM supports greener operations through hybrid cloud modernization and energy-efficient infrastructure services.
+Adobe promotes paperless workflows and efficient digital content pipelines that can lower material waste.
+NVIDIA advances energy-efficient AI hardware that can deliver more performance per watt.
+Top software makers increasingly set science-based climate targets and publish annual sustainability progress reports.

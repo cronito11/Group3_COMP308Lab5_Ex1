@@ -1,0 +1,10 @@
+AI model training and inference can consume significant electricity, especially in large data centers.
+Proof-of-work blockchain networks can increase carbon emissions when powered by fossil-fuel-heavy grids.
+Edge computing can reduce data transfer energy by processing information closer to users.
+5G network infrastructure may increase energy demand if deployment does not include efficiency controls.
+Internet of Things devices can create e-waste pressure due to short hardware lifecycles.
+Cloud providers can reduce environmental impact by shifting workloads to renewable-energy regions.
+Improved chip design can lower power consumption per AI inference task.
+Unoptimized software increases compute time and energy use, while efficient algorithms reduce both.
+Water usage for data center cooling can stress local ecosystems in drought-prone regions.
+Lifecycle assessment is essential to compare the true environmental cost of emerging technologies.

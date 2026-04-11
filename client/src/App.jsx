@@ -6,6 +6,7 @@ import "./App.css";
 
 function App() {
   const [query, setQuery] = useState("");
+  const [type, setType] = useState("environmental_impact");
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -18,12 +19,12 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:3000/api/query", { query });
+      const res = await axios.post("http://localhost:3000/api/query", { query, type });
       setResponse(res.data.response);
       
       // Add to history
       setHistory([
-        { query, response: res.data.response, timestamp: new Date().toLocaleTimeString() },
+        { query, type, response: res.data.response, timestamp: new Date().toLocaleTimeString() },
         ...history
       ].slice(0, 10)); // Keep last 10 queries
       
@@ -37,6 +38,9 @@ function App() {
 
   const handleHistoryClick = (item) => {
     setQuery(item.query);
+    if (item.type) {
+      setType(item.type);
+    }
     setResponse(item.response);
   };
 
@@ -65,6 +69,22 @@ function App() {
           <Row className="mb-4">
             <Col md={8}>
               <Form onSubmit={handleQuerySubmit}>
+                <Form.Group className="mb-3" controlId="queryType">
+                  <Form.Label><strong>Select Topic Type:</strong></Form.Label>
+                  <Form.Select
+                    value={type}
+                    onChange={(e) => setType(e.target.value)}
+                    disabled={loading}
+                  >
+                    <option value="environmental_impact">
+                      Impact of Emerging Technologies to the environment
+                    </option>
+                    <option value="sustainable_solutions">
+                      Sustainable solutions provided by top Software makers
+                    </option>
+                  </Form.Select>
+                </Form.Group>
+
                 <Form.Group className="mb-3" controlId="queryInput">
                   <Form.Label><strong>Ask a Question:</strong></Form.Label>
                   <Form.Control
